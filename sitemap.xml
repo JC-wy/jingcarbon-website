@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 网站地图：帮 Google/Bing 快速发现全部页面。部署后把 yourdomain.com 换成实际域名 -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://yourdomain.com/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://yourdomain.com/products.html</loc><priority>0.95</priority></url>
+  <url><loc>https://yourdomain.com/factory.html</loc><priority>0.8</priority></url>
+  <url><loc>https://yourdomain.com/about.html</loc><priority>0.6</priority></url>
+  <url><loc>https://yourdomain.com/news.html</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://yourdomain.com/contact.html</loc><priority>0.85</priority></url>
+</urlset>

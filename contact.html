@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Request a Carbon Fiber Quote — JingCarbon</title>
+  <meta name="description" content="Contact JingCarbon Future: send an inquiry with your name, email and purchase requirements. Quotes within 48 hours. Phone +86 198 1931 5827, email weoscott351@gmail.com.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='6' fill='%231f8bc4'/%3E%3Cpath d='M6 14 14 6M6 24 24 6M6 34 34 6M16 36 36 16M26 36 36 26' stroke='%23fff' stroke-width='2.5'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="JingCarbon Future Composites — Home">
+        <span class="brand-mark">JTWL</span>
+        <span class="brand-text">
+          <strong>JINGCARBON</strong>
+          <small>FUTURE COMPOSITES</small>
+        </span>
+      </a>
+      <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="factory.html">Factory</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html#inquiry" class="btn btn-accent btn-sm nav-cta">Get a Quote</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span class="sep">/</span><span>Contact</span>
+        </nav>
+        <h1>Contact Us</h1>
+        <p class="lead">Tell us what you need — sheets, tubes or custom parts. Our engineering team replies within 48 hours, in English, with real answers.</p>
+      </div>
+    </section>
+
+    <section class="section" id="inquiry">
+      <div class="container inquiry-wrap">
+
+        <!-- 询盘表单：提交后经 FormSubmit 转发到邮箱（首次需邮箱激活，见 js/main.js 注释） -->
+        <div class="form-card reveal">
+          <h2>Send an Inquiry</h2>
+          <p class="form-sub">Fields marked <em style="color:var(--c-accent);font-style:normal">*</em> are required. Drawing files can be emailed to us after we reply.</p>
+          <form id="inquiryForm" novalidate>
+            <!-- 蜜罐：防垃圾提交，正常用户不可见 -->
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="f-name">Your Name <em>*</em></label>
+                <input type="text" id="f-name" name="name" placeholder="e.g. John Miller" autocomplete="name">
+                <span class="field-error">Please enter your name.</span>
+              </div>
+              <div class="form-field">
+                <label for="f-email">Email <em>*</em></label>
+                <input type="email" id="f-email" name="email" placeholder="name@company.com" autocomplete="email">
+                <span class="field-error">Please enter a valid email address.</span>
+              </div>
+              <div class="form-field">
+                <label for="f-company">Company</label>
+                <input type="text" id="f-company" name="company" placeholder="Company name (optional)" autocomplete="organization">
+              </div>
+              <div class="form-field">
+                <label for="f-country">Country</label>
+                <input type="text" id="f-country" name="country" placeholder="Country (optional)" autocomplete="country-name">
+              </div>
+              <div class="form-field form-field--full">
+                <label for="f-message">Purchase Requirements <em>*</em></label>
+                <textarea id="f-message" name="message" placeholder="Product (sheets / tubes / custom parts), dimensions, quantity, material grade, target price or deadline..."></textarea>
+                <span class="field-error">Please describe your purchase requirements.</span>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-accent form-submit">Send Inquiry
+              <svg class="arr" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <p class="form-note">We reply within 48 hours (GMT+8, Mon–Sat). Your information is used only to answer this inquiry.</p>
+            <div class="form-status" id="formStatus" role="status"></div>
+          </form>
+        </div>
+
+        <!-- 联系信息卡 -->
+        <div class="contact-cards reveal reveal-delay-1">
+          <div class="contact-card">
+            <div class="cc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+            <div>
+              <h3>Factory Address</h3>
+              <p>No. 2 Workshop, 666m South of Jingjiu Rd. &amp; North Outer Ring Intersection, Jiangzhuang Village, Zhaohu Town, Tianqu New District, Dezhou, Shandong, China</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="cc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" stroke-linejoin="round"/></svg></div>
+            <div>
+              <h3>Phone / WhatsApp</h3>
+              <p><a href="tel:+852 94091418">+852 94091418</a></p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="cc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+            <div>
+              <h3>Email</h3>
+              <p><a href="mailto:weoscott351@gmail.com">weoscott351@gmail.com</a><br>Attach STEP / IGES / DWG / PDF drawings directly.</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="cc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3" stroke-linecap="round"/></svg></div>
+            <div>
+              <h3>Working Hours</h3>
+              <p>We offer 24‑hour service<br> 7 days a week for your inquiries.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 地图：Google Maps 免费嵌入（海外客户可正常加载）；如需更换定位，修改下方 q= 参数 -->
+    <section class="section--tight">
+      <div class="container">
+        <div class="map-ph reveal" style="padding:0;border:none;min-height:0;">
+          <iframe
+            src="https://maps.google.com/maps?q=Dezhou%2C%20Shandong%2C%20China&z=12&output=embed"
+            title="JingCarbon location — Dezhou, Shandong, China"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="f-col">
+        <a class="brand" href="index.html">
+        <span class="brand-mark">JTWL</span>
+        <span class="brand-text">
+          <strong>JINGCARBON</strong>
+          <small>FUTURE COMPOSITES</small>
+        </span>
+      </a>
+        <p class="f-blurb">Manufacturer of carbon fiber sheets, tubes and custom composite parts — engineering support, autoclave molding and precision CNC machining from Dezhou, China.</p>
+      </div>
+      <div class="f-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="products.html#sheets">Carbon Fiber Sheets</a></li>
+          <li><a href="products.html#tubes">Carbon Fiber Tubes</a></li>
+          <li><a href="products.html#custom-parts">Custom Parts &amp; CNC</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="factory.html">Factory Strength</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="news.html">News &amp; Insights</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Contact</h4>
+        <ul class="f-contact">
+          <li><svg class="fc-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <span>No. 2 Workshop, 666m South of Jingjiu Rd. &amp; North Outer Ring Intersection, Jiangzhuang Village, Zhaohu Town, Tianqu New District, Dezhou, Shandong, China</span></li>
+          <li><svg class="fc-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" stroke-linejoin="round"/></svg>
+            <a href="tel:+852 94091418">+852 94091418</a></li>
+          <li><svg class="fc-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            <a href="mailto:weoscott351@gmail.com">weoscott351@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© <span data-year>2026</span> JingCarbon Future (Shandong) New Materials Technology Co., Ltd. All rights reserved.</span>
+        <span>Carbon Fiber Sheets · Tubes · Custom Parts · CNC Machining</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
